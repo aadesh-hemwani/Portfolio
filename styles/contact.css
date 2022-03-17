@@ -3,10 +3,7 @@
 	max-width: 100%;
 	height: 100vh;
 	max-height: 100%;
-	/* background-color: rgb(31, 31, 31); */
-	background-image: url(../images/bg-light.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	color: white;
 }
 
 .container {
@@ -30,7 +27,8 @@
 .message-box {
 	width: 100%;
 	height: fit-content;
-	background-color: rgba(15, 15, 71, 0.5);
+	border: 0.5px solid #9e9e9e5d;
+	background-color: #132f4c;
 	backdrop-filter: blur(5px);
 	border-radius: 12px;
 	position: relative;
@@ -92,7 +90,7 @@
 	border-radius: 6px;
 	border: none;
 	resize: none;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: #001e3c;
 }
 
 ::-webkit-input-placeholder {

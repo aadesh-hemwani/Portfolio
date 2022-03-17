@@ -12,8 +12,9 @@
 	align-items: center;
 	padding: 0.3rem 0;
 	z-index: 5;
-
-	backdrop-filter: brightness(70%) blur(8px);
+	background-color: #3b3b3b79;
+	border: 0.5px solid #9e9e9e5d;
+	backdrop-filter: blur(10px);
 }
 .logo {
 	background-clip: border-box;
@@ -104,7 +105,8 @@ Nav Styles
 	right: 0;
 	bottom: 0;
 	overflow: hidden;
-	backdrop-filter: brightness(70%) blur(8px);
+	background-color: #00000079;
+	backdrop-filter: blur(8px);
 	transition: all 0.3s ease-in-out;
 	z-index: 5;
 }
@@ -131,36 +133,19 @@ nav a {
 	text-decoration: none;
 	color: white;
 	font-size: 2rem;
-	font-weight: 800;
 	display: inline-block;
 	margin-top: 1.25em;
-	transition: color 0.2s ease-in-out;
 	letter-spacing: 1px;
 	height: fit-content;
 	width: fit-content;
 }
-
-nav a:before {
-	content: "";
-	height: 0;
-	position: absolute;
-	width: 0.25em;
-	background-color: white;
-	left: -0.5em;
-	transition: all 0.2s ease-in-out;
-}
-
-/* nav a:hover {
-	color: white;
-} */
-
-nav a:hover:before {
-	height: 100%;
-}
-
 /**
 Animations
 **/
+#toggle:checked + body {
+	background-color: red;
+}
+
 #toggle:checked + .hamburger .top-bun {
 	transform: rotate(-45deg);
 	margin-top: 12px;

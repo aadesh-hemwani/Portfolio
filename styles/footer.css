@@ -3,8 +3,7 @@
 	max-width: 100%;
 	height: fit-content;
 	padding-bottom: 50px;
-	background-color: black;
-	/* background-image: linear-gradient(to top, rgb(31, 31, 31), black); */
+	background-color: #0a1929;
 	border-top: 4px solid #ffffff;
 }
 .footer-wrapper {

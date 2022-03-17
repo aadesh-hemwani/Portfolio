@@ -8,6 +8,7 @@
 
 .certi-pic {
 	border-radius: 8px;
+	border: 1px solid #3399ff;
 	transition: 0.5s ease;
 }
 .certi-pic:hover {
