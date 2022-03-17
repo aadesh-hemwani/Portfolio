@@ -3,223 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="theme-color" content="#537874">
+    <meta name="theme-color" content="#D1D7F9">
+    <link rel="icon" href="images/icon-192x192.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aadesh.</title>
-    <link rel = "icon" href = "images/icon-192x192.png" type = "image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
     <div class="cursor"></div>
+    <div class="cursor-main"></div>
+    
+    <div id="desktop-nav" class="navbar">
+        <a href="#" class="logo theme-font">aadesh.</a>
+        <ul class="desktop-nav">
+            <a href="#" class="nav-link nav-link-active theme-font">Home</a>
+            <a href="./pages/education.html" class="nav-link nav-link-ltr theme-font">Education</a>
+            <a href="./pages/projects.html" class="nav-link nav-link-ltr theme-font">Projects</a>
+            <a href="./pages/certificates.html" class="nav-link nav-link-ltr theme-font" >Certifiactes</a>
+            <a href="./pages/contact.html" class="nav-link nav-link-ltr theme-font">Contact</a>
+            <a href="./pages/about.html" class="nav-link nav-link-ltr theme-font">About</a>
+        </ul>
+    </div>
+    <input id="toggle" type="checkbox"></input>
 
+    <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+    </label>
+
+    <div class="nav-page">
+        <div class="nav-wrapper">
+            <nav>
+                <a class="nav-link-active" href="#">Home</a>
+                <br>
+                <a href="./pages/education.html">Education</a>
+                <br>
+                <a href="./pages/projects.html">Projects</a>
+                <br>
+                <a href="./pages/certificates.html">Certificates</a>
+                <br>
+                <a href="./pages/contact.html">Contact</a>
+                <br>
+                <a href="./pages/about.html">About</a>
+            </nav>
+        </div>
+    </div>
     <div class="top-wraper">
         <div class="top-section">
-            <div class="intro">
-                Hi, I am <br><span class="name">Aadesh Hemwani</span> <br>
-                I <span class="text">am a Full Stack Developer.</span>
-            </div>
-            <div class="line"></div>
-        </div>
-    </div>
-    <div class="mid-section">
-        <div class="sticky-title">Projects.</div>
-        <div class="gallery">
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/maze.PNG" alt="" srcset="">
-                <div class="project-name"
-                    onclick='window.open("https://aadesh-hemwani.github.io/Maze-and-Path-finding-algorithms/")'>
-                    Graph Search and Maze Visualizer
+            <div class="main-content">
+                <div class="intro theme-font">
+                    Hi, I am <br><span class="name">Aadesh Hemwani</span> <br>
+                    I <span class="text">am a Full Stack Developer.</span>
                 </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/sudoku.PNG" alt="" srcset="">
-                <div class="project-name" onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/sudoku/")'>
-                    Sudoku Visualizer
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/tictactoe.jpg" alt="" srcset="">
-                <div class="project-name" onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/TicTacToe/")'>
-                    Tic Tac Toe (AI)
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/game_of_life.PNG" alt="" srcset="">
-                <div class="project-name"
-                    onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/game%20of%20life/")'
-                >
-                    Game of Life
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/binary_search.PNG" alt="" srcset="">
-                <div class="project-name"
-                    onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/Binary%20Search//index.html")'>
-                    Binary Search Visualizer
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/bubble_sort.PNG" alt="" srcset="">
-                <div class="project-name"
-                    onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/Bubble%20Sort/sort.html")'>
-                    Bubble Sort Visualizer
-                </div>
-            </div>
-
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/moovy.PNG" alt="" srcset="">
-                <div class="project-name"
-                    onclick='window.open("https://github.com/aadesh-hemwani/Movies-and-Tv-Shows-App")'>
-                    Moovys
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/covidTracker.PNG" alt="" srcset="">
-                <div class="project-name" onclick='window.open("https://github.com/aadesh-hemwani/Covid19-Tracker")'>
-                    Covid-19 Tracker App
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/eduthon.PNG" alt="" srcset="">
-                <div class="project-name" onclick='window.open("https://github.com/aadesh-hemwani/eduthon-project")'>
-                    React App for Online Education
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/reactNews.PNG" alt="" srcset="">
-                <div class="project-name" onclick='window.open("https://aadesh-hemwani.github.io/ReactNews./")'>
-                    React JS News App 
-                </div>
-            </div>
-            <div class="card" data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.4" data-tilt
-                data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="700">
-                <img class="pic" src="images/ai_assistant.PNG" alt="" srcset="">
-                <div class="project-name" onclick='window.open("https://github.com/aadesh-hemwani/AI-Virtual-Assistant")'>
-                    Contextual AI Assistant
-                </div>
+                <img src="images/profile.jpg" class="poster" alt="" srcset="">
             </div>
         </div>
     </div>
-    <div class="education-section">
-        <div class="sticky-title">Education.</div>
-        <div class="timeline-content">
-            <ul class="timeline">
-                <li class="event" data-date="2019 - 2022">
-                    <h3>Master of Computer Application</h3>
-                    <p>Vivekanand Education Society's Institute Of Technology.<br>
-                        Chembur, India
-                    </p>
-                    <p>CGPI: <strong>9.38 (out of 10)</strong> (First Year) </p>
-                </li>
-                <li class="event" data-date="2016 - 2019">
-                    <h3>Bachelor of Commerce</h3>
-                    <p>Chandibai Himathmal Mansukhani College.<br>
-                        Ulhasnagar, India
-                    </p>
-                    <p>CGPI: <strong>7.42 (out of 10)</strong></p>
-                </li>
-                <li class="event" id="date" data-date="2015 - 2016">
-                    <h3>Higher Secondary Certificate (HSC)</h3>
-                    <p>Chandibai Himathmal Mansukhani College.<br>
-                        Ulhasnagar, India</p>
-                    <p>Grade: <strong>77.85%</strong></p>
-                </li>
-                <li class="event" data-date="2013 - 2014">
-                    <h3>Secondary School Certificate (SSC)</h3>
-                    <p>Holy Family Convent High School.<br>
-                        Ulhasnagar, India</p>
-                    <p>Grade: <strong>85.40%</strong></p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="about">
-        <div class="sticky-title">About me.</div>
-        <div class="terminal">
-            <div class="task-bar">
-                <ul class="btns">
-                    <li class="list-item1"></li>
-                    <li class="list-item2"></li>
-                    <li class="list-item3"></li>
-                </ul>
-            </div>
-            <div class="content">    
-                <keyword>class</keyword> <att>Aadesh</att> {<br>
-                &nbsp;&nbsp;<keyword>constructor</keyword>() {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>this.</keyword><att>name</att> = <value>'Aadesh Hemwani'</value>; <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>this.</keyword><att>dob</att> = <value>'15-December-1998'</value>; <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>this.</keyword><att>email</att> = <value>'aadesh.hemwani@gmail.com'</value>; <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>this.</keyword><att>phone</att> = <value>'+91-9604987147'</value>; <br>
-                &nbsp;&nbsp;} <br>
-                 
-                &nbsp;&nbsp;<att>skills</att>() { <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>return</keyword> { <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<att>languages:</att> {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<att>proficient:</att> [<value>Python 3</value>, <value>C++</value>, <value>JavaScript</value>],<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<att>intermediate:</att> [<value>Java 8</value>, <value>C Language</value>],<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<att>skills:</att> [<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>HTML5</value>, <value>CSS/SASS</value>, <value>Bootstrap 4</value>, <value>React JS</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>Flask</value>, <value>FastAPI</value>, <value>Django</value>,  <value>Flutter</value>, <value>Firebase</value>, <value>Git</value>, <value>JSON</value>, <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;};<br>
-                &nbsp;&nbsp;} <br>
-
-                &nbsp;&nbsp;<att>certificates</att>() { <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>return</keyword> [ <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Crash Course on Python - By Google'</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Divide and Conquer, Sorting and Searching</value><br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>Graphs, Shortest Path, Data Structures</value> <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>- By Stanford University'</value>, <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Clanguage, Advance Java, Web Development, <br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MySQL - By Seed infotech'</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Azure Fundamentals: AZ-900 - By Microsoft'</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;];<br>
-                &nbsp;&nbsp;} <br>
-
-                &nbsp;&nbsp;<att>activities</att>() { <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<keyword>return</keyword> [ <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Participated in VCET Hackathon-(2021)'</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Participated in Eduthon Hackathon-(2020)'</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<value>'Participated in ACM Hackathon-(2020)'</value>,<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;];<br>
-                &nbsp;&nbsp;} <br>
-                } <br>
-            </div>
-        </div>
-        <div class="resume">
-            <a href="/resume.pdf" class="resume-btn">Download</a>
-            My Résumé
-        </div>
-    </div>
-
-    <div class="message-section">
-        <div class="sticky-title">Message me.</div>
-        <div class="container">
-            <div class="send-me">Send me a message</div>
-            <div class="message-box">
-                <div class="msg-box-header">Your Message</div>
-                <input type="text" placeholder="Your Name" id="name" class="input">
-                <textarea class="input" rows="10" cols="50" placeholder="Type a message" id="message"></textarea>
-                <input type="button" class="send-btn" value="Send">
-            </div>
-        </div>
-    </div>
-
     <div class="footer">
         <div class="footer-wrapper">
             <div class="footer-title">aadesh.</div>
@@ -228,41 +70,20 @@
                 <ul class="social">
                     <li class="icon"><a href="https://t.me/aadesh_hemwani"><i class="fa fa-telegram"></a></i></li>
                     <li class="icon"><a href="https://wa.link/pqk64j"><i class="fa fa-whatsapp"></i></a></li>
-                    <li class="icon"><a href="https://www.instagram.com/aadesh1598/"><i class="fa fa-instagram"></i></a></li>
+                    <li class="icon"><a href="https://www.instagram.com/aadesh1598/"><i class="fa fa-instagram"></i></a>
+                    </li>
                     <li class="icon"><a href="https://github.com/aadesh-hemwani"><i class="fa fa-github"></i></a></li>
-                    <li class="icon"><a href="https://www.linkedin.com/in/adesh-hemwani"><i class="fa fa-linkedin"></i></a></li> 
+                    <li class="icon"><a href="https://www.linkedin.com/in/adesh-hemwani"><i
+                                class="fa fa-linkedin"></i></a></li>
                     <li class="icon"><a href='mailto:aadeh.hemwani@gmail.com'><i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("user_cWE4XEHCnAkOXM8xYnQNf");
-        })();
-    </script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/vanilla-tilt.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.clouds.min.js"></script>
-    <script>
-        VANTA.CLOUDS({
-        el: ".top-wraper",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        skyColor: 0x5c7282,
-        cloudShadowColor: 0x242f3c,
-        sunColor: 0x7259d2,
-        sunGlareColor: 0xeb8363,
-        sunlightColor: 0xf0aa66,
-        speed: 1.2
-        })
-    </script>
+    <script src="./scripts/home.js"></script>
+    
 </body>
 
 </html>

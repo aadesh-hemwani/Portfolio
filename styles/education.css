@@ -1,0 +1,136 @@
+.education-section {
+	background-image: url(../images/bg-light.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	max-width: 100%;
+	height: 100vh;
+	max-height: fit-content;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.timeline-content {
+	margin-top: 80px;
+	width: 100%;
+	height: fit-content;
+}
+
+.timeline {
+	border-left: 4px dashed #004ffc;
+	background-color: rgba(8, 8, 8, 0.2);
+	backdrop-filter: blur(10px);
+	margin: 0px auto;
+	letter-spacing: 0.5px;
+	position: relative;
+	line-height: 1.4rem;
+	font-size: 0.9rem;
+	padding: 20px 50px;
+	list-style: none;
+	text-align: left;
+	width: fit-content;
+	max-width: 40%;
+	border-radius: 20px;
+}
+
+h3 {
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+strong {
+	color: rgb(13, 57, 107);
+}
+
+.event {
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.event:last-of-type {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border: none;
+}
+
+.event:before,
+.event:after {
+	position: absolute;
+	display: block;
+	top: 0;
+}
+
+.event:before {
+	left: -210px;
+
+	content: attr(data-date);
+	text-align: right;
+	font-weight: 400;
+	font-size: 1.2rem;
+	min-width: 120px;
+}
+
+.event:after {
+	box-shadow: 0 0 0 4px #004ffc;
+	left: -58px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	height: 11px;
+	width: 11px;
+	content: "";
+	top: 5px;
+}
+
+@media (max-width: 680px) {
+	.timeline {
+		font-size: 0.8rem;
+		margin-right: 50px;
+	}
+	h3 {
+		font-size: 1.2rem;
+	}
+	.event:before {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.timeline {
+		margin: 0px auto;
+		font-size: 0.7rem;
+		margin-right: 40px;
+		padding: 30px;
+		font-weight: 300;
+
+		max-width: 45%;
+	}
+	h3 {
+		font-size: 1.1rem;
+	}
+	.event:before {
+		left: -170px;
+		width: 90px;
+	}
+	.event:after {
+		left: -38px;
+	}
+}
+
+@media (max-width: 400px) {
+	.timeline {
+		line-height: 1.1rem;
+		letter-spacing: 0.5px;
+		font-weight: 100;
+		max-width: 45%;
+	}
+	h3 {
+		font-size: 0.9rem;
+	}
+	.event:before {
+		width: 90px;
+		font-size: 0.7rem;
+	}
+}

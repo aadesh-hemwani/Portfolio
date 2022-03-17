@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact</title>
+	<link rel="stylesheet" href="../style.css" />
+	<meta name="theme-color" content="#D1D7F9">
+	<link rel="icon" href="../images/icon-192x192.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="cursor"></div>
+	<div class="cursor-main"></div>
+	
+	<div id="desktop-nav" class="navbar">
+		<a href="../index.html" class="logo">aadesh.</a>
+		<ul class="desktop-nav">
+			<a href="../index.html" class="nav-link nav-link-ltr">Home</a>
+			<a href="./education.html" class="nav-link nav-link-ltr">Education</a>
+			<a href="./projects.html" class="nav-link nav-link-ltr">Projects</a>
+			<a href="./certificates.html" class="nav-link nav-link-ltr">Certifiactes</a>
+			<a href="#" class="nav-link nav-link-active">Contact</a>
+			<a href="./about.html" class="nav-link nav-link-ltr">About</a>
+		</ul>
+	</div>
+	<input id="toggle" type="checkbox"></input>
+
+	<label for="toggle" class="hamburger">
+		<div class="top-bun"></div>
+		<div class="meat"></div>
+		<div class="bottom-bun"></div>
+	</label>
+
+	<div class="nav-page">
+		<div class="nav-wrapper">
+			<nav>
+				<a href="../index.html">Home</a>
+				<br>
+				<a href="./education.html">Education</a>
+				<br>
+				<a href="./projects.html">Projects</a>
+				<br>
+				<a href="./certificates.html">Certifiactes</a>
+				<br>
+				<a class="nav-link-active" href="#">Contact</a>
+				<br>
+				<a href="./about.html">About</a>
+			</nav>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="message-section">
+		<!-- <div class="navbar">Message me.</div> -->
+		<div class="container">
+			<div class="send-me">Send me a message</div>
+			<div class="message-box">
+				<div class="msg-box-header">Your Message</div>
+				<input type="text" placeholder="Your Name" id="name" class="input" />
+				<textarea class="input" rows="10" cols="50" placeholder="Type a message" id="message"></textarea>
+				<input type="button" class="send-btn" value="Send" />
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-wrapper">
+			<div class="footer-title">aadesh.</div>
+			<div class="follow-wrapper">
+				<div class="follow">Follow me:</div>
+				<ul class="social">
+					<li class="icon"><a href="https://t.me/aadesh_hemwani"><i class="fa fa-telegram"></a></i></li>
+					<li class="icon"><a href="https://wa.link/pqk64j"><i class="fa fa-whatsapp"></i></a></li>
+					<li class="icon"><a href="https://www.instagram.com/aadesh1598/"><i class="fa fa-instagram"></i></a>
+					</li>
+					<li class="icon"><a href="https://github.com/aadesh-hemwani"><i class="fa fa-github"></i></a></li>
+					<li class="icon"><a href="https://www.linkedin.com/in/adesh-hemwani"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li class="icon"><a href='mailto:aadeh.hemwani@gmail.com'><i class="fa fa-envelope"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_cWE4XEHCnAkOXM8xYnQNf");
+		})();
+	</script>
+	<script src="../scripts/main.js"></script>
+	<script src="../scripts/contact.js"></script>
+
+</body>
+
+</html>

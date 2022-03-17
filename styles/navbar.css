@@ -1,0 +1,221 @@
+.navbar {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 1rem;
+	border-radius: 50px;
+	width: 95%;
+	height: fit-content;
+	display: flex;
+	justify-self: center;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 0;
+	z-index: 5;
+
+	backdrop-filter: brightness(70%) blur(8px);
+}
+.logo {
+	background-clip: border-box;
+	font-weight: 800;
+	font-size: 1.5rem;
+	margin-left: 2rem;
+	width: fit-content;
+	text-decoration: none;
+}
+
+.desktop-nav {
+	width: fit-content;
+}
+
+.nav-link {
+	font-size: 1rem;
+	transition: 0.2s;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0.8rem 0px;
+	margin-right: 2rem;
+	display: inline;
+	position: relative;
+	font-weight: 300;
+}
+
+.nav-link::before {
+	transition: 0.4s;
+	height: 4px;
+	content: "";
+	position: absolute;
+	background-color: white;
+}
+
+.nav-link-ltr::before {
+	width: 0%;
+	bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+	width: 100%;
+}
+
+.nav-link-active {
+	padding: 0px;
+	border-bottom: 4px solid;
+	opacity: 1;
+	font-weight: 600;
+}
+
+#toggle {
+	display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+	position: fixed;
+	top: 4.1rem;
+	right: 15%;
+	margin-left: -2em;
+	margin-top: -44px;
+	width: 2em;
+	height: 45px;
+	z-index: 6;
+}
+
+.hamburger div {
+	position: relative;
+	width: 2rem;
+	height: 5px;
+	border-radius: 8px;
+	background-color: white;
+	margin-top: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav-page {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	backdrop-filter: brightness(70%) blur(8px);
+	transition: all 0.3s ease-in-out;
+	z-index: 5;
+}
+
+.nav-wrapper {
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: 2rem;
+	font-weight: 800;
+	display: inline-block;
+	margin-top: 1.25em;
+	transition: color 0.2s ease-in-out;
+	letter-spacing: 1px;
+	height: fit-content;
+	width: fit-content;
+}
+
+nav a:before {
+	content: "";
+	height: 0;
+	position: absolute;
+	width: 0.25em;
+	background-color: white;
+	left: -0.5em;
+	transition: all 0.2s ease-in-out;
+}
+
+/* nav a:hover {
+	color: white;
+} */
+
+nav a:hover:before {
+	height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+	transform: rotate(-45deg);
+	margin-top: 12px;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+	opacity: 0;
+	transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+	transform: rotate(45deg);
+	margin-top: -6px;
+}
+
+#toggle:checked + .hamburger + .nav-page {
+	top: 0;
+	transform: scale(1);
+}
+.hamburger {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.nav-link {
+		font-size: 1.2rem;
+	}
+	.desktop-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: inline;
+	}
+}
+
+@media (max-width: 1000px) {
+	.navbar {
+		font-size: 1.5rem;
+	}
+}
+@media (max-height: 700px) {
+	nav a {
+		margin-top: 1rem;
+	}
+}
+@media (max-height: 500px) {
+	nav a {
+		font-size: 1.5rem;
+		margin-top: 0.5rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		font-size: 1.5rem;
+	}
+}

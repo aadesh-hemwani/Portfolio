@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Projects</title>
+	<meta name="theme-color" content="#D1D7F9">
+	<link rel="icon" href="../images/icon-192x192.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+	<div class="cursor"></div>
+	<div class="cursor-main"></div>
+
+	<div id="desktop-nav" class="navbar">
+		<a class="logo" href="../index.html">aadesh.</a>
+		<ul class="desktop-nav">
+			<a href="../index.html" class="nav-link nav-link-ltr">Home</a>
+			<a href="./education.html" class="nav-link nav-link-ltr">Education</a>
+			<a href="#" class="nav-link nav-link-active">Projects</a>
+			<a href="./certificates.html" class="nav-link nav-link-ltr">Certifiactes</a>
+			<a href="./contact.html" class="nav-link nav-link-ltr">Contact</a>
+			<a href="./about.html" class="nav-link nav-link-ltr">About</a>
+		</ul>
+	</div>
+
+	<input id="toggle" type="checkbox"></input>
+
+	<label for="toggle" class="hamburger">
+		<div class="top-bun"></div>
+		<div class="meat"></div>
+		<div class="bottom-bun"></div>
+	</label>
+
+	<div class="nav-page">
+		<div class="nav-wrapper">
+			<nav>
+				<a href="../index.html">Home</a>
+				<br>
+				<a href="./education.html">Education</a>
+				<br>
+				<a class="nav-link-active" href="#">Projects</a>
+				<br>
+				<a href="./certificates.html">Certifiactes</a>
+				<br>
+				<a href="./contact.html">Contact</a>
+				<br>
+				<a href="./about.html">About</a>
+			</nav>
+		</div>
+	</div>
+
+	<div class="project-section">
+		<div class="gallery">
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/maze.jpg);	background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://aadesh-hemwani.github.io/Maze-and-Path-finding-algorithms/")'>
+					<div class="project-desc">
+						Graph Search and Maze Visualizer
+						<div class="description">An Algorithm Visualizer with 6 graph search algorithms along with some maze generation algorithms. Graph Algorithms include Breadth-First, Depth-First, Dijkstra’s, A* (A-star), Bidirectional & Best First search.</div>
+					</div>						
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/sudoku.jpg);background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/sudoku/")'>
+					<div class="project-desc">
+						Sudoku Visualizer
+						<div class="description">A Backtracking Algorithm Visualizer that visualizes how a Sudoku board is solved.</div>
+					</div>
+				</div>
+			</div>			
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/tictactoe.jpg); background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://aadesh-hemwani.github.io/Algorithms/Javascript/TicTacToe/")'>
+					<div class="project-desc">
+						Tic Tac Toe (AI)
+						<div class="description">Play and compete against the Minimax algorithm. It is a decision making recursive algorithm used in artificial intelligence and game theory to minimize the possible loss for a worst case scenario. <br>Good Luck! </div>
+					</div>	
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/moovy.jpg);	background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://github.com/aadesh-hemwani/Movies-and-Tv-Shows-App")'>
+					<div class="project-desc">
+						MoovyDB
+						<div class="description">A cross platform mobile application where users can search the app to find the latest Movies & TV Shows, watch trailers and create a wish list.</div>
+					</div>		
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/covidTracker.jpg);	background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://github.com/aadesh-hemwani/Covid19-Tracker")'>
+					<div class="project-desc">
+						Covid-19 Tracker App
+						<div class="description">A cross platform mobile application with elegant UI where users can check the daily covid stats.</div>
+					</div>		
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/ai_assistant.jpg);	background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://github.com/aadesh-hemwani/AI-Virtual-Assistant")'>
+					<div class="project-desc">
+						Contextual AI Assistant
+						<div class="description">A contextual AI assistant that can reply to search queries, weather, and other utility operation. It is developed using the Rasa framework with spaCy as the NLP model, the model has an accuracy of 95%.</div>
+					</div>		
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/brickBreaker.jpg);	background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://github.com/aadesh-hemwani/Brick-Breaker-AI")'>
+					<div class="project-desc">
+						Break Breaker AI
+						<div class="description">Brick Breaker game, where the computer learns to play the game itself using a NEAT (NeuroEvolution of Augmenting Topologies) which is an evolutionary algorithm.</div>
+					</div>		
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card__side card__side--front"
+					style="background-image: url(../images/projects/eduthon.jpg);	background-size: cover;">
+				</div>
+				<div class="card__side card__side--back" onclick='window.open("https://github.com/aadesh-hemwani/eduthon-project")'>
+					<div class="project-desc">
+						React App for Online Education
+						<div class="description">A web application for all online educational needs. Features include unique students’ profiles, classroom threads, assignments upload, classroom meet links, etc.</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-wrapper">
+			<div class="footer-title">aadesh.</div>
+			<div class="follow-wrapper">
+				<div class="follow">Follow me:</div>
+				<ul class="social">
+					<li class="icon"><a href="https://t.me/aadesh_hemwani"><i class="fa fa-telegram"></a></i></li>
+					<li class="icon"><a href="https://wa.link/pqk64j"><i class="fa fa-whatsapp"></i></a></li>
+					<li class="icon"><a href="https://www.instagram.com/aadesh1598/"><i class="fa fa-instagram"></i></a>
+					</li>
+					<li class="icon"><a href="https://github.com/aadesh-hemwani"><i class="fa fa-github"></i></a></li>
+					<li class="icon"><a href="https://www.linkedin.com/in/adesh-hemwani"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li class="icon"><a href='mailto:aadeh.hemwani@gmail.com'><i class="fa fa-envelope"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="../scripts/main.js"></script>
+	<script src="../scripts/projects.js"></script>
+	
+</body>
+
+</html>

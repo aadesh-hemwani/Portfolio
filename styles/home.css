@@ -1,0 +1,133 @@
+.top-wraper {
+	background-image: linear-gradient(to bottom left, #e6e6e6, #f5f5f5);
+	/* background-color: rgb(31, 31, 31); */
+}
+
+.top-section {
+	background-image: url(../images/bg-light.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	max-width: 100%;
+	height: 100vh;
+	max-height: 100%;
+	color: black;
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.intro {
+	font-size: 3rem;
+	height: 60%;
+	width: 50%;
+	line-height: 3.5rem;
+	z-index: 2;
+	margin-top: 5rem;
+}
+
+.poster {
+	margin-top: 2rem;
+	background-size: cover;
+	width: 25%;
+	height: auto;
+	box-shadow: 0rem 1rem 2rem rgb(214, 203, 203);
+	border-radius: 50%;
+	transition: 0.5s;
+}
+.poster:hover {
+	transform: scale(1.03);
+	box-shadow: 0rem 1rem 3rem rgb(167, 156, 156);
+}
+.dud {
+	color: #d71a21;
+}
+.name {
+	line-height: 6rem;
+	font-weight: 500;
+	font-size: 8rem;
+	animation: shine 10s linear infinite;
+}
+
+.text {
+	word-wrap: break-word;
+}
+
+@keyframes shine {
+	0% {
+		color: rgb(40, 199, 172);
+	}
+	20% {
+		color: rgb(212, 212, 53);
+	}
+	40% {
+		color: rgb(206, 132, 47);
+	}
+	60% {
+		color: rgb(223, 79, 35);
+	}
+	80% {
+		color: rgb(245, 26, 26);
+	}
+	100% {
+		color: rgb(47, 117, 207);
+	}
+}
+
+@media (max-width: 1024px) {
+	.intro {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+	.name {
+		font-size: 7rem;
+	}
+}
+@media (max-width: 800px) {
+	.main-content {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.intro {
+		font-size: 2.5rem;
+		line-height: 3rem;
+		width: 80%;
+		height: 50%;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	.poster {
+		margin-top: 100px;
+		height: 30%;
+		width: auto;
+		z-index: 1;
+	}
+}
+
+@media (max-width: 560px) {
+	.intro {
+		font-size: 2.1rem;
+	}
+	.name {
+		line-height: 4rem;
+		font-size: 4.5rem;
+	}
+}
+
+@media (max-height: 400px) {
+	.intro {
+		margin-top: 1rem;
+	}
+	.poster {
+		margin-top: 50px;
+	}
+}
+@media (max-width: 400px) {
+	.name {
+		font-size: 4rem;
+	}
+}
