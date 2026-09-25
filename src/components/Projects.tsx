@@ -9,7 +9,7 @@ export function Projects() {
             <span className="period">Personal Project</span>
           </div>
           <div className="company">
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/aadesh-hemwani/ExpenseTracker" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://expenses-a2401.web.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
           <ul>
             <li>Built an offline-first personal finance system with real-time updates and AI spending analysis.</li>

@@ -26,12 +26,12 @@ export function LeftSidebar() {
     <header className="left-sidebar">
       <div>
         <h1 className="sidebar-name">Adesh Hemwani</h1>
-        <h2 className="sidebar-role">Backend Software Engineer</h2>
+        <h2 className="sidebar-role">Backend Engineer, Java & Distributed Systems</h2>
         <p className="sidebar-lede">
           I build the systems that move and safeguard data at scale.
         </p>
         <p className="sidebar-sub-lede">
-          Software Engineer with 4+ years building distributed systems. Currently a backend developer on JPMorgan's trade platform, delivering Java development and infrastructure/CI-CD.
+          Backend engineer with 4+ years building and owning production distributed systems with Java and Spring Boot. Experienced across scalable microservices, event-driven architecture, and high-throughput data processing.
         </p>
 
         <div style={{ marginTop: '24px', marginBottom: '32px' }}>
