@@ -1,0 +1,192 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{accent}{RGB}{37, 47, 128}
+\definecolor{subtext}{RGB}{60, 60, 60}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[sfdefault]{carlito}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.6in}
+\setlength{\footskip}{4.08003pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Accent-colored section rule for stronger visual hierarchy
+\titleformat{\section}{
+  \vspace{-6pt}\color{accent}\raggedright\large\bfseries
+}{}{0em}{}[{\color{accent}\titlerule[1pt]} \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \parbox[t]{\linewidth}{\noindent\raggedright #1}
+    \vspace{-5pt}
+  }
+}
+
+\newcommand{\classesList}[4]{
+  \item\small{
+    {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+% Company and dates
+\newcommand{\resumeSubheading}[2]{%
+  \item
+  \vspace{-2pt}%
+  \noindent\textbf{\fontsize{10pt}{12pt}\selectfont #1}\par
+  \noindent{\small #2}\par
+  \vspace{-4pt}%
+}
+
+% Role line under a company header
+\newcommand{\resumeSubSubheading}[2]{%
+  \vspace{2pt}%
+  \noindent\hspace{0.15in}\textit{\small\color{accent}#1}\hfill\textit{\small #2}\par
+  \vspace{-4pt}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \item
+  \noindent{\small #1}\hfill\textbf{\small #2}\par
+  \vspace{-4pt}%
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Accent-colored bullet markers
+\renewcommand\labelitemi{\color{accent}$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{\color{accent}$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\color{accent}\Huge Adesh Hemwani } \\ 
+    \vspace{2pt}
+    {\small\color{subtext} +91-9604987147 |
+    \href{mailto:aadesh.hemwani@gmail.com}{aadesh.hemwani@gmail.com}} \\
+    \vspace{2pt}
+    \footnotesize\color{accent}
+    \href{https://www.linkedin.com/in/adesh-hemwani/}{linkedin.com/in/adesh-hemwani} \, |
+    \href{https://aadesh-hemwani.web.app/}{aadesh-hemwani.web.app} |
+    \href{https://github.com/aadesh-hemwani}{github.com/aadesh-hemwani} 
+    
+\end{center}
+\vspace{-2pt}
+
+\textbf{Backend Software Engineer} \small{with 4+ years designing, building, and owning production systems using Java and Spring Boot, from requirements and design through deployment and production support. Built scalable microservices and event-driven systems with Kafka, SQL, and Kubernetes, including a 60M+ document platform, modernization of a decade-old production platform, and greenfield AI-enabled backend systems.}
+\vspace{-5pt}
+
+\section{Work Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading{\textbf{Software Engineer II} | January 2026 - Present}
+      {JPMorgan Chase | Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led modernization of a 10+ year-old KYC platform}, migrating 7 modules from \textbf{Spring Framework/Linux to Spring Boot/Kubernetes} and executing phased cutover alongside the legacy system with component-level traffic routing and instant rollback, resulting in zero production regressions.}
+        \resumeItem{Accelerated \textbf{AI product iterations} by \textbf{parallelizing SQL query execution} to extract training data, reducing 12-month backfill runtimes by \textbf{40\% (from 30h to 18h).}}
+        \resumeItem{Designed and built a concurrent PDF evidence-generation system (merging \textbf{8 sections in $<$2s}) with fail-fast transaction gating, preventing cross-system data inconsistencies and eliminating downstream transaction failures in dependent platforms.}      
+        \resumeItem{Spearheaded the \textbf{development of a new validation feature} in a \textbf{142-module Spring monolith}, enforcing mandatory requirements across 21 products and blocking transaction submission, eliminating orphaned transactions and preventing end-users from encountering unresolvable missing-file errors.}
+        \resumeItem{Directed end-to-end \textbf{design and development of the backend functionality}, working directly with operations users, product BA, and technical BA to gather, refine, and finalize requirements, then translating them into production workflows.}
+      \resumeItemListEnd
+      \vspace{8pt}
+    \resumeSubheading{Associate (Software Engineer) | January 2025 - January 2026}
+      {ISS STOXX | Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Architected and developed an enterprise \textbf{distributed document-processing platform} with Kafka-connected pipelines and CRUD/search APIs, \textbf{processing 60M+ documents} to enable highly available data retrieval for global analysts.}
+        \resumeItem{Led the \textbf{zero-downtime migration of 7 Kubernetes clusters} across 3 major projects over one week, coordinating DevOps, network, and storage teams across resource sizing, host whitelisting, volume mounts, workload migration, validation, and project-owner sign-off.}
+        \resumeItem{\textbf{Sole engineer responsible for the UI modernization}, designing and developing a \textbf{50+ component React framework} over 5+ months to replace 5 legacy Angular applications, established the architecture and handed it over to 3 engineers through structured knowledge transfer.}
+      \resumeItemListEnd
+\vspace{4pt}
+    \resumeSubheading{Analyst | January 2023 - December 2024}
+      {ISS STOXX | Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led the redesign of Core Data Ingestion Pipeline}, replacing untyped end-to-end payloads with a typed Java document hierarchy and stage-specific models, improving data ownership across Java, Node.js, and Python processing stages.}
+        \resumeItem{Drove \textbf{storage architecture redesign}, replacing Elasticsearch as the system of record with \textbf{MSSQL for structured data, S3 for source documents, and Elasticsearch} for search, redesigned indexing so the search layer could be rebuilt from source and rebuilt all Java services against the new model.}
+        \resumeItem{Designed a \textbf{Trie-based blocked-URL filtering} service replacing full-blocklist URL comparisons, deployed across \textbf{5 production projects and processed 20M+ URLs}.} 
+        \resumeItem{Built and governed an \textbf{asynchronous failed-document reprocessing pipeline} using \textbf{Kafka, Python, and MongoDB}, with duplicate handling, audit tracking, and automated reporting, reducing manual intervention and improving the platform's overall data ingestion success rate.}
+        \resumeItem{Orchestrated \textbf{releases to Production}, coordinating release documentation, tagging, configuration, and cross-team rollout, also served as a stakeholder-facing point of contact for users and business teams across regions.}
+      \resumeItemListEnd
+\vspace{4pt}
+    \resumeSubheading{Junior Analyst (Promoted from Intern) | January 2022 - December 2022}
+      {ISS STOXX | Mumbai, India}
+
+      \resumeItemListStart
+        \resumeItem{Built \textbf{Spring Boot REST APIs} backed by MongoDB and Elasticsearch, reducing API latency by 45\% under high load, and established Docker, Kubernetes, Jenkins pipelines for application deployment.}
+        \resumeItem{Built responsive React.js UI components integrated with backend APIs, contributing reusable components adopted across 10+ application screens.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\color{accent}Languages}{: Java 21, Python, TypeScript} \\
+     \textbf{\color{accent}Backend}{: Spring Boot, Microservices, REST API design, Distributed Systems, Event-Driven Architecture, Concurrency and Multithreading.} \\
+     \textbf{\color{accent}Messaging \& Data}{: Apache Kafka, Redis, MongoDB, MSSQL, SQL, Elasticsearch, S3/MinIO} \\
+     \textbf{\color{accent}Infrastructure \& DevOps}{: Kubernetes (K8s), Docker, Jenkins, GitLab CI/CD (Continuous Integration/Continuous Delivery), Linux, Secrets Management} \\
+     \textbf{\color{accent}Tools}{: Git, Jira, Confluence, IntelliJ IDEA, GitHub Copilot}
+    }}
+  \end{itemize}
+  
+\vspace{-10pt}
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Expense Tracker}}{NoSQL Data Modeling, RAG Architecture, Gemini AI | \href{https://github.com/aadesh-hemwani/ExpenseTracker}{[GitHub]} | \href{https://expenses-a2401.web.app}{[Live]}}
+          \resumeItemListStart
+          \resumeItem{Designed a \textbf{cost-efficient dual-collection Firestore data model}, maintaining \textbf{pre-aggregated monthly summaries} to trade higher write complexity for constant-time dashboard reads.}
+            \resumeItem{Built an \textbf{AI-powered financial query system using RAG}, generating vector embeddings for transactions on insertion and retrieving relevant financial context for \textbf{natural-language spending queries}.}
+          \resumeItemListEnd
+          \vspace{-8pt}          
+    \resumeSubHeadingListEnd
+
+\vspace{2pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Master of Computer Application | CGPA: 9.47/10.0} | August 2019 - June 2022}
+      {Vivekanand Education Society's Institute of Technology | Mumbai, India}
+  \resumeSubHeadingListEnd
+  \vspace{-6pt}
+
+\end{document}
