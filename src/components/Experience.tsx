@@ -12,12 +12,11 @@ export function Experience() {
           </div>
           <div className="company">JPMorgan Chase & Co</div>
           <ul>
-            <li>Designed and developed new backend functionality from scratch, driving features from requirements to closure.</li>
-            <li>Built a Spring Boot data extraction service for an AI pipeline, reducing processing time by 40%.</li>
-            <li>Designed a concurrent PDF generation system with fail-fast transaction gating, processing in under 2 seconds.</li>
-            <li>Drove production readiness and automated secret management across 12 environments via Kubernetes runtime injection.</li>
-            <li>Developed a validation feature across 21 products within a 142-module Spring monolith.</li>
-            <li>Led the modernization of a legacy KYC platform to Spring Boot and Kubernetes with zero production regressions.</li>
+            <li>Led modernization of a 10+ year-old KYC platform, migrating 7 modules from Spring Framework/Linux to Spring Boot/Kubernetes and executing phased cutover alongside the legacy system with component-level traffic routing and instant rollback, resulting in zero production regressions.</li>
+            <li>Built a Spring Boot service extracting 242K legacy transaction records across 21 products as AI training data: ran 5 join-heavy SQL queries in parallel threads, merged results by transaction ID, and uploaded a zip per transaction to S3, cutting the 12-month backfill by 40% (30h to 18h).</li>
+            <li>Designed and built a concurrent PDF evidence-generation system merging 8 sections into 8-20 page documents in &lt;2s, with fail-fast transaction gating that prevents cross-system data inconsistencies and eliminates downstream transaction failures.</li>
+            <li>Spearheaded the development of a new validation feature in a 142-module Spring monolith, enforcing mandatory requirements across 21 products and blocking transaction submission, eliminating orphaned transactions and preventing end users from encountering unresolvable missing-file errors.</li>
+            <li>Partnered directly with operations users and product/technical BAs to refine requirements, design backend solutions, and translate business workflows into production functionality.</li>
           </ul>
           <div className="stack">
             <span className="tag">Java 21</span>

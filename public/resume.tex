@@ -101,17 +101,19 @@
     {\color{accent}\Huge Adesh Hemwani } \\ 
     \vspace{2pt}
     {\small\color{subtext} +91-9604987147 |
-    \href{mailto:aadesh.hemwani@gmail.com}{aadesh.hemwani@gmail.com}} \\
+    \href{mailto:aadesh.hemwani@gmail.com}{aadesh.hemwani@gmail.com} |
+    Mumbai, India | 
+    Open to relocation }\\
     \vspace{2pt}
     \footnotesize\color{accent}
     \href{https://www.linkedin.com/in/adesh-hemwani/}{linkedin.com/in/adesh-hemwani} \, |
-    \href{https://aadesh-hemwani.web.app/}{aadesh-hemwani.web.app} |
+    \href{https://aadesh-hemwani.web.app/}{adeshhemwani.web.app} |
     \href{https://github.com/aadesh-hemwani}{github.com/aadesh-hemwani} 
     
 \end{center}
 \vspace{-2pt}
 
-\textbf{Backend Software Engineer} \small{with 4+ years designing, building, and owning production systems using Java and Spring Boot, from requirements and design through deployment and production support. Built scalable microservices and event-driven systems with Kafka, SQL, and Kubernetes, including a 60M+ document platform, modernization of a decade-old production platform, and greenfield AI-enabled backend systems.}
+\textbf{Backend Software Engineer} \small{with 4+ years designing, building, and owning production systems using Java and Spring Boot, from requirements and design through deployment and production support. Built scalable microservices and event-driven systems with Kafka, SQL and Kubernetes, including a 60M+ document platform, modernization of a decade-old KYC platform, and greenfield AI-enabled backend systems.}
 \vspace{-5pt}
 
 \section{Work Experience}
@@ -120,10 +122,10 @@
       {JPMorgan Chase | Mumbai, India}
       \resumeItemListStart
         \resumeItem{\textbf{Led modernization of a 10+ year-old KYC platform}, migrating 7 modules from \textbf{Spring Framework/Linux to Spring Boot/Kubernetes} and executing phased cutover alongside the legacy system with component-level traffic routing and instant rollback, resulting in zero production regressions.}
-        \resumeItem{Accelerated \textbf{AI product iterations} by \textbf{parallelizing SQL query execution} to extract training data, reducing 12-month backfill runtimes by \textbf{40\% (from 30h to 18h).}}
-        \resumeItem{Designed and built a concurrent PDF evidence-generation system (merging \textbf{8 sections in $<$2s}) with fail-fast transaction gating, preventing cross-system data inconsistencies and eliminating downstream transaction failures in dependent platforms.}      
-        \resumeItem{Spearheaded the \textbf{development of a new validation feature} in a \textbf{142-module Spring monolith}, enforcing mandatory requirements across 21 products and blocking transaction submission, eliminating orphaned transactions and preventing end-users from encountering unresolvable missing-file errors.}
-        \resumeItem{Directed end-to-end \textbf{design and development of the backend functionality}, working directly with operations users, product BA, and technical BA to gather, refine, and finalize requirements, then translating them into production workflows.}
+        \resumeItem{Built a \textbf{Spring Boot service} extracting \textbf{242K legacy transaction records} across \textbf{21 products} as AI training data: ran \textbf{5 join-heavy SQL queries in parallel threads}, merged results by transaction ID, and uploaded a zip per transaction to \textbf{S3}, cutting the 12-month backfill by \textbf{40\% (30h to 18h)}.}
+        \resumeItem{Designed and built a \textbf{concurrent PDF evidence-generation system} merging \textbf{8 sections into 8-20 page documents in <2s}, with \textbf{fail-fast transaction gating} that prevents cross-system data inconsistencies and eliminates downstream transaction failures.}  
+        \resumeItem{Spearheaded the \textbf{development of a new validation feature} in a \textbf{142-module Spring monolith}, enforcing mandatory requirements across 21 products and blocking transaction submission, eliminating orphaned transactions and preventing end users from encountering unresolvable missing-file errors.}
+        \resumeItem{Partnered directly with \textbf{operations users and product/technical BAs} to refine requirements, design backend solutions, and translate business workflows into production functionality.}
       \resumeItemListEnd
       \vspace{8pt}
     \resumeSubheading{Associate (Software Engineer) | January 2025 - January 2026}
@@ -131,24 +133,24 @@
       \resumeItemListStart
         \resumeItem{Architected and developed an enterprise \textbf{distributed document-processing platform} with Kafka-connected pipelines and CRUD/search APIs, \textbf{processing 60M+ documents} to enable highly available data retrieval for global analysts.}
         \resumeItem{Led the \textbf{zero-downtime migration of 7 Kubernetes clusters} across 3 major projects over one week, coordinating DevOps, network, and storage teams across resource sizing, host whitelisting, volume mounts, workload migration, validation, and project-owner sign-off.}
-        \resumeItem{\textbf{Sole engineer responsible for the UI modernization}, designing and developing a \textbf{50+ component React framework} over 5+ months to replace 5 legacy Angular applications, established the architecture and handed it over to 3 engineers through structured knowledge transfer.}
+        \resumeItem{Sole engineer on the UI modernization: designed and built a \textbf{50+ component React framework over 5+ months}, replacing 5 legacy Angular applications, then handed it over to 3 engineers through structured knowledge transfer.}
       \resumeItemListEnd
 \vspace{4pt}
-    \resumeSubheading{Analyst | January 2023 - December 2024}
+    \resumeSubheading{Analyst (Software Engineer) | January 2023 - December 2024}
       {ISS STOXX | Mumbai, India}
       \resumeItemListStart
-        \resumeItem{\textbf{Led the redesign of Core Data Ingestion Pipeline}, replacing untyped end-to-end payloads with a typed Java document hierarchy and stage-specific models, improving data ownership across Java, Node.js, and Python processing stages.}
-        \resumeItem{Drove \textbf{storage architecture redesign}, replacing Elasticsearch as the system of record with \textbf{MSSQL for structured data, S3 for source documents, and Elasticsearch} for search, redesigned indexing so the search layer could be rebuilt from source and rebuilt all Java services against the new model.}
-        \resumeItem{Designed a \textbf{Trie-based blocked-URL filtering} service replacing full-blocklist URL comparisons, deployed across \textbf{5 production projects and processed 20M+ URLs}.} 
+        \resumeItem{\textbf{Led the redesign of Core Document Ingestion Pipeline}, replacing untyped end-to-end payloads with a typed Java document hierarchy and stage-specific models, improving data ownership across Java, Node.js, and Python processing stages.}
+        \resumeItem{Drove \textbf{storage architecture redesign}: moved the system of record from Elasticsearch to \textbf{MSSQL (structured data) and S3 (source documents)}, keeping \textbf{Elasticsearch for search} only. Redesigned indexing so the search layer can be rebuilt from source, and rebuilt all Java services against the new model.}
+        \resumeItem{Designed a \textbf{Trie-based blocked-URL filtering} service replacing full-blocklist URL comparisons, deployed across \textbf{5 production projects and processing 20M+ URLs}.} 
         \resumeItem{Built and governed an \textbf{asynchronous failed-document reprocessing pipeline} using \textbf{Kafka, Python, and MongoDB}, with duplicate handling, audit tracking, and automated reporting, reducing manual intervention and improving the platform's overall data ingestion success rate.}
-        \resumeItem{Orchestrated \textbf{releases to Production}, coordinating release documentation, tagging, configuration, and cross-team rollout, also served as a stakeholder-facing point of contact for users and business teams across regions.}
+        \resumeItem{Orchestrated \textbf{production releases}, coordinating release documentation, tagging, configuration, and cross-team rollout, and served as a stakeholder-facing point of contact for users and business teams across regions.}
       \resumeItemListEnd
 \vspace{4pt}
-    \resumeSubheading{Junior Analyst (Promoted from Intern) | January 2022 - December 2022}
+    \resumeSubheading{Junior Analyst (Software Engineer) (Promoted from Intern)  | January 2022 - December 2022}
       {ISS STOXX | Mumbai, India}
 
       \resumeItemListStart
-        \resumeItem{Built \textbf{Spring Boot REST APIs} backed by MongoDB and Elasticsearch, reducing API latency by 45\% under high load, and established Docker, Kubernetes, Jenkins pipelines for application deployment.}
+        \resumeItem{Built \textbf{Spring Boot REST APIs} backed by MongoDB and Elasticsearch, reducing API latency by 45\% under high load, and set up Docker, Kubernetes and Jenkins pipelines for application deployment.}
         \resumeItem{Built responsive React.js UI components integrated with backend APIs, contributing reusable components adopted across 10+ application screens.}
       \resumeItemListEnd
 
@@ -159,7 +161,7 @@
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{\color{accent}Languages}{: Java 21, Python, TypeScript} \\
-     \textbf{\color{accent}Backend}{: Spring Boot, Microservices, REST API design, Distributed Systems, Event-Driven Architecture, Concurrency and Multithreading.} \\
+     \textbf{\color{accent}Backend}{: Spring Boot, Microservices, REST API design, Distributed Systems, Event-Driven Architecture, Concurrency and Multithreading} \\
      \textbf{\color{accent}Messaging \& Data}{: Apache Kafka, Redis, MongoDB, MSSQL, SQL, Elasticsearch, S3/MinIO} \\
      \textbf{\color{accent}Infrastructure \& DevOps}{: Kubernetes (K8s), Docker, Jenkins, GitLab CI/CD (Continuous Integration/Continuous Delivery), Linux, Secrets Management} \\
      \textbf{\color{accent}Tools}{: Git, Jira, Confluence, IntelliJ IDEA, GitHub Copilot}

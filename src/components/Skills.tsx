@@ -13,16 +13,18 @@ export function Skills() {
           <h3>Backend & Architecture</h3>
           <span className="tag">Spring Boot</span>
           <span className="tag">Microservices</span>
+          <span className="tag">REST API design</span>
           <span className="tag">Distributed Systems</span>
           <span className="tag">Event-Driven Architecture</span>
-          <span className="tag">REST APIs</span>
+          <span className="tag">Concurrency and Multithreading</span>
         </div>
         <div className="skill-group">
           <h3>Messaging & Data</h3>
           <span className="tag">Apache Kafka</span>
-          <span className="tag">MongoDB</span>
           <span className="tag">Redis</span>
+          <span className="tag">MongoDB</span>
           <span className="tag">MSSQL</span>
+          <span className="tag">SQL</span>
           <span className="tag">Elasticsearch</span>
           <span className="tag">S3/MinIO</span>
         </div>
@@ -32,7 +34,7 @@ export function Skills() {
           <span className="tag">Docker</span>
           <span className="tag">Jenkins</span>
           <span className="tag">GitLab CI/CD</span>
-          <span className="tag">Secrets Management</span>
+          <span className="tag">Linux</span>
         </div>
       </div>
     </section>
