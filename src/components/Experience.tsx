@@ -10,12 +10,13 @@ export function Experience() {
             <h3>Software Engineer II</h3>
             <span className="period">January 2026 — Present</span>
           </div>
-          <div className="company">JPMorgan Chase & Co</div>
+          <div className="company">JPMorgan Chase</div>
           <ul>
-            <li>Led modernization of a 10+ year-old KYC platform, migrating 7 modules from Spring Framework/Linux to Spring Boot/Kubernetes and executing phased cutover alongside the legacy system with component-level traffic routing and instant rollback, resulting in zero production regressions.</li>
-            <li>Built a Spring Boot service extracting 242K legacy transaction records across 21 products as AI training data: ran 5 join-heavy SQL queries in parallel threads, merged results by transaction ID, and uploaded a zip per transaction to S3, cutting the 12-month backfill by 40% (30h to 18h).</li>
-            <li>Designed and built a concurrent PDF evidence-generation system merging 8 sections into 8-20 page documents in &lt;2s, with fail-fast transaction gating that prevents cross-system data inconsistencies and eliminates downstream transaction failures.</li>
-            <li>Spearheaded the development of a new validation feature in a 142-module Spring monolith, enforcing mandatory requirements across 21 products and blocking transaction submission, eliminating orphaned transactions and preventing end users from encountering unresolvable missing-file errors.</li>
+            <li>Led migration of a 10-year-old KYC platform (7 modules) from Spring Framework on Linux to Spring Boot on Kubernetes. Ran old and new components side by side, then switched traffic per component with instant rollback available, resulting in zero production regressions.</li>
+            <li>Engineered a multithreaded Spring Boot extraction service that runs 5 join-heavy SQL queries in parallel and uploads one archive per transaction to S3, covering 242K records across 21 products and cutting backfill time by 40% (30h to 18h).</li>
+            <li>Built a concurrent document-generation service that renders 8 sections in parallel and merges them into 8-20 page PDFs in under 2 seconds. Blocks transaction submission if generation fails, preventing cross-system data inconsistencies.</li>
+            <li>Spearheaded development of a new validation feature in a 142-module Spring monolith, enforcing mandatory requirements across 21 products and blocking transaction submission, eliminating orphaned transactions and preventing unresolvable user errors.</li>
+            <li>Resolved production defect where the validation fired on non-eligible products. Traced the call path through Splunk logs to an early-return on null data in legacy code, removed it, and deployed the fix in under 12 hours.</li>
             <li>Partnered directly with operations users and product/technical BAs to refine requirements, design backend solutions, and translate business workflows into production functionality.</li>
           </ul>
           <div className="stack">
@@ -35,14 +36,15 @@ export function Experience() {
 
           <div className="sub-role" style={{ marginBottom: '24px' }}>
             <div className="role-head" style={{ marginBottom: '8px' }}>
-              <h4 style={{ margin: 0, fontSize: '1.05rem', color: 'var(--text-dim)' }}>Associate Software Engineer</h4>
+              <h4 style={{ margin: 0, fontSize: '1.05rem', color: 'var(--text-dim)' }}>Associate (Software Engineer)</h4>
               <span className="period" style={{ fontSize: '0.85rem' }}>Jan 2025 — Jan 2026</span>
             </div>
             <ul>
-              <li>Owned Java services for a distributed document platform processing 60M+ documents.</li>
-              <li>Rebuilt shared Java and TypeScript database and S3 libraries for major storage upgrades.</li>
-              <li>Led zero-downtime migration of 7 Kubernetes clusters across 3 projects in one week.</li>
-              <li>Single-handedly modernized UI with a 50+ component React framework replacing legacy Angular apps.</li>
+              <li>Built Java services and Kafka-based processes for a distributed document-processing platform that ingests, converts, and indexes files and URLs for global analysts, processing 60M+ documents.</li>
+              <li>Led zero-downtime migrations of 7 Kubernetes clusters across 3 distributed projects over one week, coordinating DevOps and network teams for resource sizing, volume mounts, and workload validation.</li>
+              <li>Wrote 70+ Karate API test scenarios in Gherkin-style syntax, covering positive and negative cases across 10+ endpoints, and ran them in parallel before each release.</li>
+              <li>Built an asynchronous, fault-tolerant error-reprocessing pipeline using Kafka and MongoDB, featuring automated audit tracking and duplicate handling to improve data ingestion success rates.</li>
+              <li>Designed and built a 50+ component React framework over 5+ months, replacing 5 legacy Angular applications, and successfully handed it over to engineering peers through structured knowledge transfer.</li>
             </ul>
             <div className="stack">
               <span className="tag">Java</span>
@@ -54,15 +56,14 @@ export function Experience() {
 
           <div className="sub-role" style={{ marginBottom: '24px' }}>
             <div className="role-head" style={{ marginBottom: '8px' }}>
-              <h4 style={{ margin: 0, fontSize: '1.05rem', color: 'var(--text-dim)' }}>Analyst</h4>
+              <h4 style={{ margin: 0, fontSize: '1.05rem', color: 'var(--text-dim)' }}>Analyst (Software Engineer)</h4>
               <span className="period" style={{ fontSize: '0.85rem' }}>Jan 2023 — Dec 2024</span>
             </div>
             <ul>
-              <li>Redesigned data ingestion pipeline with typed models across Java, Node.js, and Python.</li>
-              <li>Redesigned storage architecture with MSSQL and S3, rebuilding all Java services against the new model.</li>
-              <li>Designed a Trie-based URL filtering service processing 20M+ URLs in production.</li>
-              <li>Built a Kafka and Python pipeline for automated failed-document reprocessing.</li>
-              <li>Coordinated cross-team releases to UAT and Production environments.</li>
+              <li>Led the redesign of the Core Document Ingestion Pipeline, replacing untyped payloads with a typed Java document hierarchy and stage-specific models to streamline data ownership across multi-language processing stages.</li>
+              <li>Drove storage architecture redesign: moved the system of record from Elasticsearch to MSSQL (structured data) and S3 (source documents), keeping Elasticsearch for search only. Redesigned indexing so the search layer can be rebuilt from source, and rebuilt all Java services against the new model.</li>
+              <li>Designed a Trie-based filter that matches URLs against a blocklist by domain prefix, deployed across 5 production projects and processing 20M+ URLs.</li>
+              <li>Orchestrated production releases, managing deployment documentation, tagging, configuration, and cross-team rollout, while troubleshooting application logs using Graylog and Kubernetes pod failures and serving as a stakeholder-facing technical point of contact.</li>
             </ul>
             <div className="stack">
               <span className="tag">Python</span>
@@ -75,13 +76,12 @@ export function Experience() {
 
           <div className="sub-role">
             <div className="role-head" style={{ marginBottom: '8px' }}>
-              <h4 style={{ margin: 0, fontSize: '1.05rem', color: 'var(--text-dim)' }}>Junior Analyst / Intern</h4>
+              <h4 style={{ margin: 0, fontSize: '1.05rem', color: 'var(--text-dim)' }}>Junior Analyst (Software Engineer)</h4>
               <span className="period" style={{ fontSize: '0.85rem' }}>Jan 2022 — Dec 2022</span>
             </div>
             <ul>
-              <li>Built Spring Boot REST APIs with MongoDB & Elasticsearch, reducing latency by 45%.</li>
-              <li>Established Docker, Kubernetes, and CI/CD pipelines for application deployment.</li>
-              <li>Built reusable React.js UI components adopted across 10+ application screens.</li>
+              <li>Built Spring Boot REST APIs backed by MongoDB and Elasticsearch, reducing API latency by 45% under high load, and set up Docker, Kubernetes and Jenkins pipelines for application deployment.</li>
+              <li>Built responsive React.js UI components integrated with backend APIs, contributing reusable components adopted across 10+ application screens.</li>
             </ul>
           </div>
         </div>
